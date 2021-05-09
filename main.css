@@ -5,9 +5,26 @@
 }
 
 .container{
-    border: 1px solid green;
     text-align: center;
-    margin: 4rem auto;
-    width: 70%;
-    
+    margin: 20% auto;
+    width: 82%;  
+    font-size: 26px;
+}
+#quote{
+    margin-bottom: 1.3rem;
+    margin-top: 2rem;
+}
+#author{
+    font-size: 20px;
+}
+#place{
+    margin-bottom: 1.2rem;
+    font-size: 16px;
+}
+#btn{
+    padding: 5px 10px;
+    font-size: 20px;
+    margin: 2rem 0;
+    border-radius: 5px;
+    border: none;
 }
