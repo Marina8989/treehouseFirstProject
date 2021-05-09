@@ -31,3 +31,26 @@ let quotes = [
     },
 ]
 
+const container = document.querySelector('#container');
+const blockQ = document.querySelector('#quote');
+const author = document.querySelector('#author');
+const place = document.querySelector('#place');
+const btn = document.querySelector('#btn');
+
+btn.addEventListener('click', getQuote)
+
+function randomNum() {
+    let random = Math.floor(Math.random() * quotes.length)
+    return random;
+}
+
+function getQuote() {
+    let getRandomNum = randomNum();
+    blockQ.innerText = quotes[getRandomNum].quote;
+    author.innerText = quotes[getRandomNum].author;
+    place.innerText = quotes[getRandomNum].place;
+
+    container.appendChild(blockQ);
+    container.appendChild(author);
+    container.appendChild(place);
+}
